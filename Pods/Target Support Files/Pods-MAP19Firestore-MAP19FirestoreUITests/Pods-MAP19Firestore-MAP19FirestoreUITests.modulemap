@@ -1,0 +1,6 @@
+framework module Pods_MAP19Firestore_MAP19FirestoreUITests {
+  umbrella header "Pods-MAP19Firestore-MAP19FirestoreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
