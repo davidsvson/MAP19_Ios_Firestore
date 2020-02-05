@@ -20,6 +20,8 @@ class Item {
         self.done = done
     }
     
+    
+    // en contructor som tar in ett firestore document ocg skapar ett object utifron det
     init(snapshot: QueryDocumentSnapshot) {
         let snapshotValue = snapshot.data() as [String : Any]
         name = snapshotValue["name"] as! String
@@ -30,6 +32,7 @@ class Item {
         done = !done
     }
     
+    // gör om ett object till en dictionary som kan laddas upp på firestore
     func toDict() -> [String : Any] {
         return ["name" : name,
                 "done" : done]

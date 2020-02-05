@@ -25,7 +25,10 @@ class ViewController: UIViewController {
         
         let tryffel = Item(name: "tryffel")
         
-       // itemRef.addDocument(data: tryffel.toDict())
+        // lägg till documentet tryffel till databasen
+        // använd vår egen metod .toDict()
+       // för att göra om objectet till en dictionary
+        itemRef.addDocument(data: tryffel.toDict())
         
 //        itemRef.document("morot").getDocument() { (document , error) in
 //            if let document = document, document.exists {
